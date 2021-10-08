@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="styleSheet" type="text/css" href="musicPlayer.css">
+    <title>Music Player</title>
+
+</head>
+<body>
+<div>
+<h2>AUDIO LIST</h2>
+<p id="blow"><img src="image/a.jpg" height="50px" width="50px">Rilwan-Blow</p>
+<p id="cent"><img src="image/b.jpg" height="50px" width="50px">50 Cent-She wants it</p>
+<p id="game"><img src="image/c.jpg" height="50px" width="50px">BlackFace-Ahead of the game</p>
+    
+    
+    
+
+
+
+
+</div>
+
+
+
+
+<div class="player">
+<div id="box stack-top" style="background: blue;">
+<p id="songs2" style="display: block;">
+
+    <div class="slide-container11">
+        <div class="slide fade">
+            <img src="image/a.jpg" height="200px" width="200px">
+            <div class="artistName">RILWAN</div>
+            <div class="trackName">BLOW</div>
+
+        </div>
+        
+        
+        <div class="slide fade">
+            <img src="image/b.jpg" height="200px" width="200px">
+            <div class="artistName">50 CENT</div>
+            <div class="artistName">SHE WANTS IT</div>
+
+        </div>
+        
+        <div class="slide fade">
+            <img src="image/c.jpg" height="200px" width="200px">
+            <div class="artistName">BLACK FACE</div>
+            <div class="artistName">AHEAD OF THE GAME</div>
+        </div>
+        <br>
+    <div class="time">
+        00:00
+    <span></span>
+        00:00
+    </div>
+<div id="music_list">
+    <audio controls autoplay></audio>
+</div>
+
+    <button onclick="start()" type="button">Start</button><br>
+    <button type="button" class="prev">Prev</button>
+    <button type="button" id="PausePlay">Play</button>
+    <button type="button" class="next">Next</button><br>
+    <button class="decrease" onclick="decreaseVolume()" type="button">-</button>
+    <button class="volume-up" type="button">Mute</button>
+    <button class="increase" onclick="increaseVolume()" type="button">+</button>
+    <button id="stopNow" type="button">stop</button>
+</div>
+
+<!-- 
+<div class="details">
+<div class="slide fade">
+   
+    <div > <img src="image/a.jpg" class="track-art"></div>
+<div class="track-name">Jobiokoto</div>
+<div class="track-artist">2shortz ft Rayce</div>
+<audio controls  class="music"><source src="music/2short.mp3" type="audio/mpeg">
+    your browser does not support the audio element
+    </audio>
+</div>
+
+<div class="slide fade">
+   
+    <div > <img src="image/b.jpg" class="track-art"></div>
+<div class="track-name">Ahead of the game</div>
+<div class="track-artist">Black Face</div>
+<audio controls  class="music"><source src="music/game.mp3" type="audio/mpeg">
+    your browser does not support the audio element
+    </audio>
+</div>
+
+
+<div class="slide fade">
+   
+    <div > <img src="image/c.jpg" class="track-art"></div>
+<div class="track-name">She want it</div>
+<div class="track-artist">50 Cent ft Justin Timberlake</div>
+<audio controls  class="music"><source src="music/cent.mp3" type="audio/mpeg">
+    your browser does not support the audio element
+    </audio>
+</div>
+</div>
+-->
+<br><br>
+<!--section for displaying seek slider-->
+<div class="slider_container">
+<div class="currentTime">00:00</div>
+<input type="range" id="progress-bar" min="1" max="100" value="0" onchange="changeProgressBar()">
+<div class="durationTime">00:00</div>
+
+</div>
+seek slider
+<input type="range" class="seekslider" id="seekslider" min="0" max="100" value="0" step="1">
+
+<!--displaying the volume slider-->
+<div class="slider_container">
+<!--<input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">-->
+</div>
+<button class="prev">Prev</button>
+<button onclick="play()" type="button">Play & Pause</button>
+
+<button  class="next">Next</button>
+
+
+
+<input type="range" class="slider" id="volumeslider" min="0" max="100" value="100" step="1">
+</p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<p id="albums2" style="display: none;">
+    Albums ipsum dolor sit, amet consectetur adipisicing elit. Officiis accusamus, excepturi ea amet alias ex, enim dolorum tenetur voluptate praesentium laborum sunt sed id labore tempora exercitationem incidunt vitae error!
+</p>
+
+<p id="artists2" style="display: none;">
+    ARTISTS ipsum dolor sit, amet consectetur adipisicing elit. Officiis accusamus, excepturi ea amet alias ex, enim dolorum tenetur voluptate praesentium laborum sunt sed id labore tempora exercitationem incidunt vitae error!
+</p>
+
+<p id="playlists2" style="display: none;">
+    Playlist ipsum dolor sit, amet consectetur adipisicing elit. Officiis accusamus, excepturi ea amet alias ex, enim dolorum tenetur voluptate praesentium laborum sunt sed id labore tempora exercitationem incidunt vitae error!
+</p>-->
+
+
+</div>
+
+</div>
+<script src="musicPlayer.js"></script>
+</body>
+</html>

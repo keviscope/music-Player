@@ -1,0 +1,199 @@
+
+
+h2{
+    color:white;
+}
+
+
+#box{
+    display: flex;
+    justify-content: flex-start;
+    overflow: auto;
+    color: white;
+ 
+}
+
+
+#Cagories{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+  
+}
+
+
+ h4:active{
+    text-decoration: underline;  
+    cursor: pointer;
+ }
+
+
+ #container{
+    width: 100%;
+    height: 100%;
+    position: relative;   
+ }
+
+
+
+#navi{
+  
+    position: absolute; 
+}
+
+#info{
+ 
+    
+    position:fixed;
+  
+}
+
+
+.container{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 20px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0.8;
+   
+}
+
+.stack-top{
+    z-index: 9;
+    margin: 20px;
+}
+
+
+
+
+body{
+    background-color: lightgreen;
+}
+
+.player{
+    height:95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.details .slide{
+    display: none;
+    width:100%;
+}
+
+
+
+.details .music{
+    display: none;
+    width:100%;
+}
+
+
+
+.track-art{
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+}
+
+
+.track-name{
+    font-size: 1rem;
+}
+
+.track-artist{
+    font-size: 1.5rem;
+}
+
+
+
+.slider_container{
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.seek_slider, .volume_slider{
+appearance: none;
+height: 5px;
+background: black;
+opacity: 0.7;
+transition: opacity .2s;
+
+}
+
+.seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor:pointer;
+    border-radius: 50%;
+
+}
+
+.seek_slider:hover, .volume_slider:hover{
+    opacity: 1.0;
+}
+
+.seek_slider{
+    width: 60%;
+}
+
+.volume_slider{
+    width: 29%;
+}
+
+
+.current-time, .total-duration{
+padding: 10px;
+}
+
+
+
+
+
+
+.slider-container11{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 1000px;
+    margin: auto;
+    }
+    
+
+   
+    .slide-container11 .slide{
+        display: none;
+        width:100%;
+    }
+
+    ul li{
+    padding-bottom: 10px;
+    }
+        
